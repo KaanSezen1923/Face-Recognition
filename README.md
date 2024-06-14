@@ -43,21 +43,21 @@ This project implements a face recognition system using Python, OpenCV, and face
 ### Encoding Known Faces
 1. Run the script to encode the images:
     ```sh
-    python encode_faces.py
+    python face_encoder.py
     ```
 2. This script will generate `EncodeFile.p`, which contains the encodings and names of the known individuals.
 
 ### Resizing Images
 If you need to resize the images before encoding, you can use the provided resizing script:
 ```sh
-python resize_images.py
+python resize.py
 ```
 By default, this script will resize images to 216x216 pixels.
 
 ## Running the Face Recognition
 To start the face recognition system, run:
 ```sh
-python face_recognition.py
+python main.py
 ```
 The script will capture video from the webcam, detect faces, recognize them using the precomputed encodings, and provide audio feedback.
 
